@@ -1,0 +1,31 @@
+NAME
+
+list_versions.pl - A little script that takes module names as command
+line arguments and prints the versions installed in a format suitable
+for copy/pasting into Build.PL or Makefile.PL
+
+USAGE
+
+    list_versions.pl Carp URI LWP::UserAgent Some::OtherModule LWP
+
+OUTPUT
+
+This is a sample of printed output for the USAGE sample:
+
+    'Carp'              => 1.04,
+    'URI'               => 1.35,
+    'LWP::UserAgent'    => 2.036,
+
+    ERROR: Can't locate Some/OtherModule.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 7) line 1.
+    BEGIN failed--compilation aborted at (eval 7) line 1.
+
+    'LWP'               => 5.808,
+
+AUTHOR
+
+Zoffix Znet (zoffix@cpan.org)
+
+LICENSE
+
+There is no license. You may do whatever you want with this program and
+author is in no way reliable for ANYTHING that will happen.
