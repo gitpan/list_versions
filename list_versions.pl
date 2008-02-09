@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 die "Usage: ver MODULE1 MODULE2 .. MODULEN\n"
     unless @ARGV;
